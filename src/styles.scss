@@ -1,0 +1,54 @@
+@import '~react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+
+$icon-font-path: '~@blueprintjs/core/resources/icons';
+$pt-intent-primary: #63a4be;
+
+@import '~@blueprintjs/core/src/common/colors';
+
+$button-intents: (
+        'primary': ($pt-intent-primary, #749dae, #8fc9e0),
+        'success': ($pt-intent-success, $green2, $green1),
+        'warning': ($pt-intent-warning, $orange2, $orange1),
+        'danger': ($pt-intent-danger, $red2, $red1)
+    )
+    !default;
+
+@import '~@blueprintjs/core/src/blueprint';
+@import '~@blueprintjs/datetime/src/blueprint-datetime';
+
+$mdc-layout-grid-default-gutter: (
+    desktop: 8px,
+    tablet: 4px,
+    phone: 4px
+);
+
+$mdc-layout-grid-default-margin: (
+    desktop: 8px,
+    tablet: 4px,
+    phone: 4px
+);
+
+@import '~@material/layout-grid/mdc-layout-grid';
+
+a:hover {
+    text-decoration: none;
+}
+
+h6 + h6 {
+    margin: 10px 0;
+}
+
+.pt-button-group {
+    .pt-button {
+        z-index: 0;
+        &.pt-intent-primary {
+            z-index: 0;
+        }
+    }
+}
+
+.pt-table {
+    th, td {
+        padding: 4px!important;
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@trigo/pathfinder-ui-css",
+  "version": "0.1.0",
+  "description": "CSS for pathfinder-ui",
+  "main": "index.js",
+  "repository": "git@github.com:kelkes/pathfinder-ui-css.git",
+  "author": "David Wippel <david@trigo.at>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "rm -rf ./dist && yarn build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@blueprintjs/core": "1.35.0",
+    "@blueprintjs/datetime": "^1.25.1",
+    "@material/layout-grid": "^0.41.0",
+    "autoprefixer": "^9.3.1",
+    "node-sass": "^4.10.0",
+    "react-draft-wysiwyg": "^1.12.13",
+    "rollup": "^0.67.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.3",
+    "bourbon": "^4.3.4"
+  }
+}
